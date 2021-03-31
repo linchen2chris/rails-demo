@@ -1,0 +1,59 @@
+#+BEGIN_SRC restclient
+GET http://localhost:3000/greet
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC js
+{
+  "message": "hello chris"
+}
+// GET http://localhost:3000/greet
+// HTTP/1.1 200 OK
+// X-Frame-Options: SAMEORIGIN
+// X-XSS-Protection: 1; mode=block
+// X-Content-Type-Options: nosniff
+// X-Download-Options: noopen
+// X-Permitted-Cross-Domain-Policies: none
+// Referrer-Policy: strict-origin-when-cross-origin
+// Content-Type: application/json; charset=utf-8
+// Vary: Accept
+// Cache-Control: no-store, must-revalidate, private, max-age=0
+// X-Request-Id: d202d79f-2d06-4945-8f69-f1a8be92c1d4
+// X-Runtime: 0.030625
+// X-MiniProfiler-Original-Cache-Control: max-age=0, private, must-revalidate
+// X-MiniProfiler-Ids: 5fvu8jvw7rpyc1ia8p6b,mihklwbyse2ucmjaozi0,1rwu993rteoujhasif2w,2i054o0wnv7o83gi7whu,ohwytddea5k52rz5nyh8,uejij7bjol76fdhuhiab,4mp0c4rmuxwcij38mu23,dldudktz7gkiyau45bae
+// Set-Cookie: __profilin=p%3Dt; path=/; HttpOnly; SameSite=Lax
+// Transfer-Encoding: chunked
+// Request duration: 0.044854s
+#+END_SRC
+
+#+BEGIN_SRC restclient
+	POST http://localhost:3000/save
+	Content-Type: application/json
+	{"name": "test"}
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC js
+{
+  "message": "save success"
+}
+// POST http://localhost:3000/save
+// HTTP/1.1 200 OK
+// X-Frame-Options: SAMEORIGIN
+// X-XSS-Protection: 1; mode=block
+// X-Content-Type-Options: nosniff
+// X-Download-Options: noopen
+// X-Permitted-Cross-Domain-Policies: none
+// Referrer-Policy: strict-origin-when-cross-origin
+// Content-Type: application/json; charset=utf-8
+// Vary: Accept
+// Cache-Control: no-store, must-revalidate, private, max-age=0
+// X-Request-Id: 5f55f0f3-3f15-4f0c-b798-5228739cab8b
+// X-Runtime: 0.007615
+// X-MiniProfiler-Original-Cache-Control: max-age=0, private, must-revalidate
+// X-MiniProfiler-Ids: 7gj2nu03xfvtejhhbu1g,mihklwbyse2ucmjaozi0,1rwu993rteoujhasif2w,2i054o0wnv7o83gi7whu,ohwytddea5k52rz5nyh8,uejij7bjol76fdhuhiab,4mp0c4rmuxwcij38mu23,dldudktz7gkiyau45bae,5fvu8jvw7rpyc1ia8p6b,rp9cb3uzgv8pmgeyblg1
+// Set-Cookie: __profilin=p%3Dt; path=/; HttpOnly; SameSite=Lax
+// Transfer-Encoding: chunked
+// Request duration: 0.012414s
+#+END_SRC
